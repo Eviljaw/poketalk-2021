@@ -15,6 +15,13 @@
   text-align: center;
 }
 
+#only-mobile img {
+  width: 120px;
+  height: auto;
+  border-radius: 10em;
+  margin-left: 20px;
+}
+
 @media screen and (max-width: 600px) {
   #only-mobile {
     display: none;
