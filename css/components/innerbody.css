@@ -1,0 +1,22 @@
+.inner-body {
+  width: 100%;
+  position: fixed;
+  top: calc(var(--height-status-bar) + var(--height-header));
+  height: var(--height-inner-body);
+  padding: var(--padding-inner-body) var(--padding-inner-body-side);
+  overflow: scroll;
+  box-sizing: border-box;
+}
+
+.inner-body::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-show {
+  display: none;
+}
+
+.inner-body-channel {
+  padding-top: 0;
+  padding-bottom: 0;
+}

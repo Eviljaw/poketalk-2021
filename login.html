@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poke'Talk Login page</title>
+  </head>
+  <body class="login-body">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>Poke'</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>12:12</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Poke'Talk</h1>
+      <p class="welcome-header__text">If you have a Poke' Account,</p>
+      <p class="welcome-header__text">
+        log in with your email or phone number.
+      </p>
+    </header>
+
+    <form action="friends.html" method="GET" id="login-form">
+      <input
+        required
+        name="username"
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input required name="password" type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <input type="submit" value="Sign Up" />
+      <a href="#">Find Kokoa Account or Password</a>
+    </form>
+
+    <div class="login-background">
+      <img
+        src="https://projectpokemon.org/home/gallery/image/78147-char-pikachupng/?do=download"
+      />
+    </div>
+
+    <div id="only-mobile">
+      <span>Your Screen is too Big</span>
+      <img
+        src="https://static.wikia.nocookie.net/pokemon/images/a/af/%EB%8F%84%ED%8A%B8_6XY_025.gif/revision/latest/scale-to-width-down/60?cb=20140728062758&path-prefix=ko"
+      />
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

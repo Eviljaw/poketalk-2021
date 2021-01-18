@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poke' Talk</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>Poke'</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>12:12</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <div class="header channel-header">
+      <div class="header__column">
+        <span class="header__column__title">Channel</span>
+      </div>
+      <div class="header__column channel-header">
+        <a href="#covid-section"
+          ><span class="channel-selector">COVID-19</span></a
+        >
+        <a href="#news-section"><span class="channel-selector">NEWS</span></a>
+      </div>
+    </div>
+
+    <div class="inner-body inner-body-channel">
+      <div class="channel-section__initial">
+        <span class="channel-section__initial__text"
+          >Choose an interesting topic</span
+        >
+        <i class="fas fa-arrow-circle-up fa-2x"></i>
+      </div>
+
+      <a href="#">
+        <iframe
+          src="https://corona-live.com/"
+          id="covid-section"
+          class="channel-section"
+          width="100%"
+          height="1200px"
+        ></iframe
+      ></a>
+
+      <a href="#">
+        <iframe
+          src="https://m.news.naver.com/"
+          id="news-section"
+          class="channel-section"
+          width="100%"
+          height="1200px"
+        ></iframe
+      ></a>
+    </div>
+    <div class="nav-bar">
+      <div class="nav-bar__column">
+        <a href="friends.html">
+          <img
+            src="https://static.wikia.nocookie.net/pokemon/images/e/e5/%EB%8F%84%ED%8A%B8_3%EB%A3%A8%EC%82%AC_025_%EC%83%89%EB%8B%A4%EB%A5%B8.png/revision/latest/scale-to-width-down/64?cb=20100627041615&path-prefix=ko"
+          />
+        </a>
+      </div>
+      <div class="nav-bar__column">
+        <a href="chatlist.html">
+          <img
+            src="https://static.wikia.nocookie.net/pokemon/images/e/e5/%EB%8F%84%ED%8A%B8_3%EB%A3%A8%EC%82%AC_025_%EC%83%89%EB%8B%A4%EB%A5%B8.png/revision/latest/scale-to-width-down/64?cb=20100627041615&path-prefix=ko"
+          />
+        </a>
+        <span class="chat-count">119</span>
+      </div>
+      <div class="nav-bar__column">
+        <a href="channel.html">
+          <img
+            src="https://static.wikia.nocookie.net/pokemon/images/0/04/%EB%8F%84%ED%8A%B8_3%EC%97%90%EB%A9%94_025.gif/revision/latest/scale-to-width-down/64?cb=20100627041639&path-prefix=ko"
+          />
+        </a>
+      </div>
+      <div class="nav-bar__column">
+        <a href="more.html">
+          <img
+            src="https://static.wikia.nocookie.net/pokemon/images/e/e5/%EB%8F%84%ED%8A%B8_3%EB%A3%A8%EC%82%AC_025_%EC%83%89%EB%8B%A4%EB%A5%B8.png/revision/latest/scale-to-width-down/64?cb=20100627041615&path-prefix=ko"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div id="only-mobile">
+      <span>Your Screen is too Big</span>
+      <img
+        src="https://static.wikia.nocookie.net/pokemon/images/a/af/%EB%8F%84%ED%8A%B8_6XY_025.gif/revision/latest/scale-to-width-down/60?cb=20140728062758&path-prefix=ko"
+      />
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

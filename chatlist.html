@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poke' Talk</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>Poke'</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>12:12</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <div class="header">
+      <div class="header__column">
+        <span class="header__column__title">Chat</span>
+      </div>
+      <div class="header__column">
+        <a href="#popup-search"><i class="fas fa-search fa-lg"></i></a>
+        <a href="#popup-newchat"><i class="far fa-comment-dots fa-lg"></i></a>
+        <a href="#popup-settings"><i class="fas fa-cog fa-lg"></i></a>
+      </div>
+    </div>
+
+    <div class="inner-body">
+      <div class="group-chats">
+        <a href="jessie.html">
+          <div class="my-box chat-box">
+            <div class="my-box__column">
+              <img
+                src="https://cdn.costumewall.com/wp-content/uploads/2017/03/jessie-team-rocket.jpg"
+              />
+            </div>
+            <div class="my-box__column">
+              <span class="my-box__column__title">Jessi</span>
+              <span class="my-box__column__content"
+                >Don't think it's over!</span
+              >
+            </div>
+            <div class="my-box__column">
+              <span class="my-box__column__time">AM 09:04</span>
+              <span class="my-box__column__chat-count chat-count">8</span>
+            </div>
+          </div></a
+        >
+
+        <a href="eevee.html">
+          <div class="my-box chat-box">
+            <div class="my-box__column">
+              <img
+                src="https://pbs.twimg.com/profile_images/1274565382196477953/S5Q56nzg_400x400.jpg"
+              />
+            </div>
+            <div class="my-box__column">
+              <span class="my-box__column__title">EEVEE</span>
+              <span class="my-box__column__content">EEVEEEEEEEE!</span>
+            </div>
+            <div class="my-box__column">
+              <span class="my-box__column__time">PM 12:04</span>
+              <span class="my-box__column__chat-count chat-count">99</span>
+            </div>
+          </div></a
+        >
+      </div>
+    </div>
+
+    <div class="nav-bar">
+      <div class="nav-bar__column">
+        <a href="friends.html">
+          <img
+            src="https://static.wikia.nocookie.net/pokemon/images/e/e5/%EB%8F%84%ED%8A%B8_3%EB%A3%A8%EC%82%AC_025_%EC%83%89%EB%8B%A4%EB%A5%B8.png/revision/latest/scale-to-width-down/64?cb=20100627041615&path-prefix=ko"
+          />
+        </a>
+      </div>
+      <div class="nav-bar__column">
+        <a href="chatlist.html">
+          <img
+            src="https://static.wikia.nocookie.net/pokemon/images/0/04/%EB%8F%84%ED%8A%B8_3%EC%97%90%EB%A9%94_025.gif/revision/latest/scale-to-width-down/64?cb=20100627041639&path-prefix=ko"
+          />
+        </a>
+        <span class="chat-count">119</span>
+      </div>
+      <div class="nav-bar__column">
+        <a href="channel.html">
+          <img
+            src="https://static.wikia.nocookie.net/pokemon/images/e/e5/%EB%8F%84%ED%8A%B8_3%EB%A3%A8%EC%82%AC_025_%EC%83%89%EB%8B%A4%EB%A5%B8.png/revision/latest/scale-to-width-down/64?cb=20100627041615&path-prefix=ko"
+          />
+        </a>
+      </div>
+      <div class="nav-bar__column">
+        <a href="more.html">
+          <img
+            src="https://static.wikia.nocookie.net/pokemon/images/e/e5/%EB%8F%84%ED%8A%B8_3%EB%A3%A8%EC%82%AC_025_%EC%83%89%EB%8B%A4%EB%A5%B8.png/revision/latest/scale-to-width-down/64?cb=20100627041615&path-prefix=ko"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div id="only-mobile">
+      <span>Your Screen is too Big</span>
+      <img
+        src="https://static.wikia.nocookie.net/pokemon/images/a/af/%EB%8F%84%ED%8A%B8_6XY_025.gif/revision/latest/scale-to-width-down/60?cb=20140728062758&path-prefix=ko"
+      />
+    </div>
+
+    <div id="popup-search" class="overlay">
+      <div class="popup-header">
+        <div class="popup-header__close fa-lg">
+          <a href="#"><i class="fas fa-times"></i></a>
+        </div>
+        <div class="popup-header__title"><span>Search</span></div>
+      </div>
+      <div class="popup-search-bar">
+        <form><input type="text" /></form>
+      </div>
+    </div>
+
+    <div id="popup-newchat" class="overlay">
+      <div class="popup-header">
+        <div class="popup-header__close fa-lg">
+          <a href="#"><i class="fas fa-times"></i></a>
+        </div>
+        <div class="popup-header__title"><span>Start a Chat</span></div>
+      </div>
+      <div class="popup-icon-bar">
+        <div class="popup-icon-bar__column">
+          <i class="far fa-comment fa-lg"></i>
+          <span>Regular Chat</span>
+        </div>
+        <div class="popup-icon-bar__column">
+          <i class="fas fa-user-lock fa-lg"></i>
+          <span>Secret Chat</span>
+        </div>
+        <div class="popup-icon-bar__column">
+          <i class="far fa-comments fa-lg"></i>
+          <span>Open Chat</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup-settings" class="overlay">
+      <div class="popup-header">
+        <div class="popup-header__close fa-lg">
+          <a href="#"><i class="fas fa-times"></i></a>
+        </div>
+        <div class="popup-header__title"><span>Settings</span></div>
+      </div>
+      <div class="popup-settings__list">
+        <div class="popup-settings__content">
+          <div><i class="fas fa-bullhorn"></i></div>
+          <div><span>Notices</span></div>
+        </div>
+        <div class="popup-settings__content">
+          <div><i class="fas fa-code-branch"></i></div>
+          <div><span>Version</span></div>
+        </div>
+        <div class="popup-settings__content">
+          <div><i class="far fa-bell"></i></div>
+          <div><span>Notifications</span></div>
+        </div>
+        <div class="popup-settings__content">
+          <div><i class="far fa-user"></i></div>
+          <div><span>Friends</span></div>
+        </div>
+        <div class="popup-settings__content">
+          <div><i class="far fa-comment"></i></div>
+          <div><span>Chats</span></div>
+        </div>
+        <div class="popup-settings__content">
+          <div><i class="fas fa-brush"></i></div>
+          <div><span>Themes</span></div>
+        </div>
+        <a href="login.html"
+          ><div class="popup-settings__content">
+            <div class="bounce-animation">
+              <i class="fas fa-sign-out-alt"></i>
+            </div>
+            <div><span>Log out</span></div>
+          </div></a
+        >
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

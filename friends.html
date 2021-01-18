@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poke' Talk</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>Poke'</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>12:12</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <div class="header">
+      <div class="header__column">
+        <span class="header__column__title">Friends</span>
+      </div>
+      <div class="header__column">
+        <a href="#popup-search"><i class="fas fa-search fa-lg"></i></a>
+        <a href="#popup-friend"><i class="far fa-user fa-lg"></i></a>
+        <a href="#popup-settings"><i class="fas fa-cog fa-lg"></i></a>
+      </div>
+    </div>
+
+    <div class="inner-body">
+      <div class="my-box">
+        <div class="my-box__column">
+          <img
+            src="https://img.insight.co.kr/static/2018/12/01/700/uaoxedog2e32o78ai3q7.jpg"
+          />
+        </div>
+        <div class="my-box__column">
+          <span class="my-box__column__title">Ash Ketchum</span>
+          <span class="my-box__column__content">I Choose You!</span>
+        </div>
+        <div class="my-box__column"></div>
+      </div>
+
+      <div class="friends-group bounce-animation" onclick="favoritesHideAndShow()">
+        <span>Favorites</span>
+        <i class="fas fa-chevron-down fa-sm"></i>
+        <!-- <i class="fas fa-chevron-up"></i> -->
+      </div>
+
+      <div class="group-favorites">
+        <div class="my-box friends-box">
+          <div class="my-box__column">
+            <img
+              src="https://i0.wp.com/wooriclass.co.kr/wp-content/uploads/2018/01/1-121.jpg?resize=600%2C450"
+            />
+          </div>
+          <div class="my-box__column">
+            <span class="my-box__column__title">Misty</span>
+            <span class="my-box__column__content">Come on Cerulean Gym!</span>
+          </div>
+          <div class="my-box__column"></div>
+        </div>
+
+        <div class="my-box friends-box">
+          <div class="my-box__column">
+            <img
+              src="https://scontent.ficn4-1.fna.fbcdn.net/v/t1.0-9/11050091_816964248378416_8461570736343606504_n.jpg?_nc_cat=107&ccb=2&_nc_sid=09cbfe&_nc_ohc=bFEegV0C2c8AX-9msoe&_nc_ht=scontent.ficn4-1.fna&oh=c75301a9f8477546b760a25573cae0ff&oe=602C0095"
+            />
+          </div>
+          <div class="my-box__column">
+            <span class="my-box__column__title">Brock Harrison</span>
+            <span class="my-box__column__content">My Onix is invincible.</span>
+          </div>
+          <div class="my-box__column"></div>
+        </div>
+
+        <div class="my-box friends-box">
+          <div class="my-box__column">
+            <img
+              src="https://cdn.costumewall.com/wp-content/uploads/2017/03/jessie-team-rocket.jpg"
+            />
+          </div>
+          <div class="my-box__column">
+            <span class="my-box__column__title">Jessie</span>
+            <span class="my-box__column__content">Team Rocket Forever!</span>
+          </div>
+          <div class="my-box__column"></div>
+        </div>
+
+        <div class="my-box friends-box">
+          <div class="my-box__column">
+            <img
+              src="https://2.gall-img.com/tdgall/files/attach/images/82/931/221/069/1757dd5b4706803dba0675e8713b6d7e.jpg"
+            />
+          </div>
+          <div class="my-box__column">
+            <span class="my-box__column__title">James</span>
+            <span class="my-box__column__content">Where's Meowth?</span>
+          </div>
+          <div class="my-box__column"></div>
+        </div>
+      </div>
+
+      <div class="friends-group bounce-animation" onclick="friendsHideAndShow()"">
+        <span>Friends</span>
+        <i class="fas fa-chevron-down fa-sm"></i>
+        <!-- <i class="fas fa-chevron-up"></i> -->
+      </div>
+
+      <div class="group-friends">
+        <div class="my-box friends-box">
+          <div class="my-box__column">
+            <img
+              src="https://blog.kakaocdn.net/dn/bde9TD/btqCjRmlQ7R/It2trKSjcjFPV0KCzO3PU1/img.jpg"
+            />
+          </div>
+          <div class="my-box__column">
+            <span class="my-box__column__title">Charmander</span>
+            <span class="my-box__column__content">I love fire.</span>
+          </div>
+          <div class="my-box__column"></div>
+        </div>
+
+        <div class="my-box friends-box">
+          <div class="my-box__column">
+            <img
+              src="https://t1.daumcdn.net/cfile/tistory/993F1A455BA4EAC824"
+            />
+          </div>
+          <div class="my-box__column">
+            <span class="my-box__column__title">Bulbasaur</span>
+            <span class="my-box__column__content">I Choose You!</span>
+          </div>
+          <div class="my-box__column"></div>
+        </div>
+
+        <div class="my-box friends-box">
+          <div class="my-box__column">
+            <img
+              src="https://lh3.googleusercontent.com/proxy/eF-ESpepDTklwzpMHZeuSJQbLXkuRVBvE_gYQiG0wV9omDvBMg-A068JiobCBV_7u1YZB4eoC4GptijavOJ_f6pI-YousONNmdK2GRM3WtbdkK4d1iyXMeqAG9nZXYOsWSCLItHIDjNdQE_q8H1KWflrmi-cr1IGdPtg4NBZr3UG8le1B5CcoQAB0XYhsJVG3CKtorP0aQuswO1aSa_w5jiPW6SsVhsHy48w2_Nxm2ChC7ySOJGo3e9GilbtxYCRYn_Nm0KCjnp0gWa5rboNTnj562zVNQ1yj0HhsXnzHOlYnoTsinIqS3t-CiyXCdO_bBNYrpNk051KGD12lw0kS5kllQ"
+            />
+          </div>
+          <div class="my-box__column">
+            <span class="my-box__column__title">Squirtle</span>
+            <span class="my-box__column__content">😋😋😋😋😋</span>
+          </div>
+          <div class="my-box__column"></div>
+        </div>
+
+        <div class="my-box friends-box">
+          <div class="my-box__column">
+            <img
+              src="https://pbs.twimg.com/profile_images/1274565382196477953/S5Q56nzg_400x400.jpg"
+            />
+          </div>
+          <div class="my-box__column">
+            <span class="my-box__column__title">Eevee</span>
+            <span class="my-box__column__content">EEVEEEEEEEEEEEEE!</span>
+          </div>
+          <div class="my-box__column"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-bar">
+        <div class="nav-bar__column">
+          <a href="friends.html">
+            <img src="https://static.wikia.nocookie.net/pokemon/images/0/04/%EB%8F%84%ED%8A%B8_3%EC%97%90%EB%A9%94_025.gif/revision/latest/scale-to-width-down/64?cb=20100627041639&path-prefix=ko" />
+          </a>
+        </div>
+        <div class="nav-bar__column">
+          <a href="chatlist.html">
+            <img src="https://static.wikia.nocookie.net/pokemon/images/e/e5/%EB%8F%84%ED%8A%B8_3%EB%A3%A8%EC%82%AC_025_%EC%83%89%EB%8B%A4%EB%A5%B8.png/revision/latest/scale-to-width-down/64?cb=20100627041615&path-prefix=ko" />
+          </a>
+          <span class="chat-count">119</span>
+        </div>
+        <div class="nav-bar__column">
+          <a href="channel.html">
+            <img src="https://static.wikia.nocookie.net/pokemon/images/e/e5/%EB%8F%84%ED%8A%B8_3%EB%A3%A8%EC%82%AC_025_%EC%83%89%EB%8B%A4%EB%A5%B8.png/revision/latest/scale-to-width-down/64?cb=20100627041615&path-prefix=ko" />
+          </a>
+        </div>
+        <div class="nav-bar__column">
+          <a href="more.html">
+            <img src="https://static.wikia.nocookie.net/pokemon/images/e/e5/%EB%8F%84%ED%8A%B8_3%EB%A3%A8%EC%82%AC_025_%EC%83%89%EB%8B%A4%EB%A5%B8.png/revision/latest/scale-to-width-down/64?cb=20100627041615&path-prefix=ko" />
+          </a>
+        </div>
+
+    </div>
+
+
+    <div id="only-mobile">
+      <span>Your Screen is too Big</span>
+      <img
+        src="https://static.wikia.nocookie.net/pokemon/images/a/af/%EB%8F%84%ED%8A%B8_6XY_025.gif/revision/latest/scale-to-width-down/60?cb=20140728062758&path-prefix=ko"
+      />
+    </div>
+
+    <div id="popup-search" class="overlay">
+      <div class="popup-header">
+        <div class="popup-header__close fa-lg"><a href="#"><i class="fas fa-times"></i></a></div>
+        <div class="popup-header__title"><span>Search</span></div>
+      </div>
+      <div class="popup-search-bar">
+        <form><input type="text" /></form>
+      </div>
+    </div>
+
+    <div id="popup-friend" class="overlay">
+      <div class="popup-header">
+        <div class="popup-header__close fa-lg"><a href="#"><i class="fas fa-times"></i></a></div>
+        <div class="popup-header__title"><span>Add Friends</span></div>
+      </div>
+      <div class="popup-icon-bar">
+        <div class="popup-icon-bar__column">
+          <i class="fas fa-qrcode fa-lg"></i>
+          <span>QR code</span>
+        </div>
+        <div class="popup-icon-bar__column">
+          <i class="fas fa-address-book fa-lg"></i>
+          <span>Add by Contacts</span>
+        </div>
+        <div class="popup-icon-bar__column">
+          <i class="fas fa-id-card-alt fa-lg"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="popup-icon-bar__column">
+          <i class="fas fa-user-friends fa-lg"></i>
+          <span>Recommended Friends</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="popup-settings" class="overlay">
+      <div class="popup-header">
+        <div class="popup-header__close fa-lg"><a href="#"><i class="fas fa-times"></i></a></div>
+        <div class="popup-header__title"><span>Settings</span></div>
+      </div>
+      <div class="popup-settings__list">
+        <div class="popup-settings__content">
+          <div><i class="fas fa-bullhorn"></i></div>
+          <div><span>Notices</span></div>
+        </div>
+        <div class="popup-settings__content">
+          <div><i class="fas fa-code-branch"></i></div>
+          <div><span>Version</span></div>
+        </div>
+        <div class="popup-settings__content">
+          <div><i class="far fa-bell"></i></div>
+          <div><span>Notifications</span></div>
+        </div>
+        <div class="popup-settings__content">
+          <div><i class="far fa-user"></i></div>
+          <div><span>Friends</span></div>
+        </div>
+        <div class="popup-settings__content">
+          <div><i class="far fa-comment"></i></div>
+          <div><span>Chats</span></div>
+        </div>
+        <div class="popup-settings__content">
+          <div><i class="fas fa-brush"></i></div>
+          <div><span>Themes</span></div>
+        </div>
+        <a href="login.html"><div class="popup-settings__content">
+          <div class="bounce-animation"><i class="fas fa-sign-out-alt"></i></div>
+          <div><span>Log out</span></div>
+        </div></a>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

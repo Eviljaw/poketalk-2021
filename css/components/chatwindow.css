@@ -1,0 +1,93 @@
+.chat-window-body {
+  position: fixed;
+  width: 100%;
+  height: calc(100vh - var(--height-status-bar));
+  top: var(--height-status-bar);
+  box-sizing: border-box;
+}
+
+.chat-window-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: var(--height-header);
+  padding: 0 var(--padding-inner-body-side);
+  border-bottom: var(--line-color-light);
+}
+
+.chat-window-header > div:first-child {
+  width: 10%;
+}
+
+.chat-window-header > div:nth-child(2) {
+  width: 80%;
+}
+
+.chat-window-header__title {
+  display: flex;
+  justify-content: center;
+  font-size: var(--font-size-mid);
+  font-weight: 600;
+}
+
+.chat-window-inner {
+  width: 100%;
+  height: calc(100vh - var(--height-status-bar) - var(--height-header));
+  padding: 0px var(--padding-inner-body-side);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-window-date {
+  width: 60%;
+  align-self: center;
+  border-radius: 5em;
+  background-color: var(--line-color-light);
+  margin-bottom: 10px;
+}
+
+.chat-window-date span {
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-jessie {
+  background-image: url("https://assetsds.cdnedge.bluemix.net/sites/default/files/styles/amp_metadata_content_image_min_696px_wide/public/feature/images/team_rocket.jpg?itok=VtvI1HCO");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.chat-eevee {
+  background-image: url("https://i.pinimg.com/originals/ae/00/61/ae0061c26a3e068f063c73e620287021.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 180%;
+}
+
+.input-bar__border {
+  transition: all 0.3s ease-in-out;
+}
+
+.chat-input-bar:focus-within .fa-plus-square,
+.chat-input-bar:focus-within .fa-smile {
+  opacity: 0;
+}
+
+.chat-input-bar:focus-within .input-bar__border {
+  width: 85vw;
+  transform: translateX(-7%);
+}
+
+.chat-input-bar:focus-within .input-bar__border i:last-child {
+  color: var(--my-yellow);
+}
+
+.input-bar__border i {
+  transition: color 0.3s ease-in-out;
+}

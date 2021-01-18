@@ -1,0 +1,31 @@
+:root {
+  /* template size */
+  --body-min-width: 300px;
+  --body-max-width: 600px;
+  --height-status-bar: 26px;
+  --height-header: 50px;
+  --height-nav-bar: 80px;
+  --height-inner-body: calc(
+    100vh - var(--height-status-bar) - var(--height-header) -
+      var(--height-nav-bar)
+  );
+  --padding-inner-body-side: 15px;
+  --padding-inner-body: 10px;
+
+  /* font & img size */
+  --font-size-lg: 25px;
+  --font-size-mid: 18px;
+  --font-size-sm: 13px;
+  --font-size-xs: 11px;
+  --img-size-lg: 60px;
+  --img-size-mid: 50px;
+  --img-size-sm: 40px;
+  --img-size-sx: 30px;
+
+  /* color */
+  --my-yellow: #f8d632;
+  --my-red: #d86057;
+  --font-color-default: #080806;
+  --font-color-light: rgba(100, 100, 100, 0.8);
+  --line-color-light: rgba(200, 200, 200, 0.5);
+}
